@@ -106,21 +106,23 @@ table {
 }
 
 .main-sections {
+	width: 100%; /* Или задайте конкретную ширину */
+	max-width: 1200px; /* Чтобы контейнер не был слишком узким */
+	margin: 0 auto; /* Центрирование контейнера */
 	display: flex;
-	align-items: flex-start;
 	justify-content: space-between;
 }
 
 .main-section-one {
-	position: relative;
 	width: 304px;
 	height: 170px;
+	margin-top: 70px;
 	border: 1px solid white;
-	background-color: rgba(208, 193, 193, 0.1); /* bg-white bg-opacity-10 */
+	background-color: rgba(208, 193, 193, 0.1);
 	backdrop-filter: blur(8px);
 	/* БЛЮР */
 	border-radius: 50px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* shadow-lg shadow-black/5 */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .block {
@@ -186,6 +188,7 @@ table {
 
 .main-section-three {
 	position: relative;
+
 	width: 205px;
 	height: 115.74403381347656px;
 	border: 1px solid white;
