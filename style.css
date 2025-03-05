@@ -248,3 +248,144 @@ table {
 	top: 15px;
 	left: 230px;
 }
+
+/* ====== Планшеты (до 1024px) ====== */
+@media (max-width: 1024px) {
+	.header {
+		padding: 40px 10%;
+	}
+
+	.header-ul {
+		gap: 40px;
+	}
+
+	.hero {
+		height: 120vh; /* Уменьшаем высоту */
+		background-size: contain;
+	}
+
+	.main {
+		margin-top: 50px;
+	}
+
+	.main-sections {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.main-section-one,
+	.main-section-three {
+		width: 90%; /* Растягиваем на мобильных */
+		max-width: 400px;
+	}
+
+	.section-two-h1 {
+		font-size: clamp(28px, 3vw, 72px);
+	}
+
+	.section-two-p {
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
+
+/* ====== Смартфоны (до 768px) ====== */
+@media (max-width: 768px) {
+	.header {
+		padding: 30px 5%;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header-ul {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.hero {
+		height: 100vh;
+		padding: 5vw;
+		background-size: cover;
+	}
+
+	.main-sections {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.main-section-one,
+	.main-section-three {
+		width: 95%;
+		max-width: 350px;
+		height: auto;
+		padding: 20px;
+	}
+
+	.section-two-h1 {
+		font-size: clamp(24px, 4vw, 60px);
+	}
+
+	.section-two-p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.input-section-two {
+		width: 90%;
+		padding: 15px 20px;
+	}
+
+	.search-icon {
+		left: auto;
+		right: 20px;
+	}
+}
+
+/* ====== Маленькие устройства (до 480px) ====== */
+@media (max-width: 480px) {
+	.header {
+		padding: 20px 5%;
+	}
+
+	.header-ul {
+		gap: 15px;
+	}
+
+	.hero {
+		height: auto;
+		min-height: 80vh;
+	}
+
+	.main-section-one,
+	.main-section-three {
+		max-width: 300px;
+		border-radius: 30px;
+	}
+
+	.block-section-three-h1 {
+		font-size: 28px;
+	}
+
+	.block-section-three-p {
+		font-size: 16px;
+	}
+
+	.section-two-h1 {
+		font-size: 28px;
+	}
+
+	.section-two-p {
+		font-size: 16px;
+	}
+
+	.input-section-two {
+		padding: 12px 15px;
+	}
+
+	.search-icon {
+		top: 12px;
+		right: 15px;
+	}
+}
